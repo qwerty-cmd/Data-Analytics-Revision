@@ -43,6 +43,7 @@ def draw_bar_plot():
     fig.set_size_inches(13, 7)
     ax.set_ylabel('Average Page Views')
     ax.set_xlabel('Years')
+    plt.legend(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], title = 'Months')
 
 
     # Save image and return fig (don't change this part)
