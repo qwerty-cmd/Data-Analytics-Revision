@@ -31,7 +31,7 @@ def draw_bar_plot():
     # Copy and modify data for monthly bar plot
     df_bar = df.copy()
     df_bar['Month'] = df_bar.index.month
-    df_bar['Month'] = df_bar['Month'].apply(lambda x: calendar.month_name[x])
+#     df_bar['Month'] = df_bar['Month'].apply(lambda x: calendar.month_name[x])
     df_bar['Year'] = df_bar.index.year
     df_bar = df_bar.groupby([df_bar['Month'], df_bar['Year']])['value'].agg(np.mean)
     df_bar = df_bar.reset_index()
